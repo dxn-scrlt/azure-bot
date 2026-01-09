@@ -45,6 +45,6 @@ module.exports = {
 
         // write .json file and store new message id
         persistentMessagesFileData[message.channelId] = newMessage.id;
-        fs.writeFileSync(persistentMessagesFile, JSON.stringify(persistentMessagesFileData, null, 4));
+        fs.writeFileSync(persistentMessagesFile, JSON.stringify(persistentMessagesFileData, null, 2));
     }
 };
